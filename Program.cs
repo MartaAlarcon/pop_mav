@@ -37,6 +37,11 @@ namespace Examen
 
                     return false;
 
+                if (year <= 1000 || year >= 3000)
+                {
+                    return false;
+                }
+
                 if (month < 1 || month > 12)
 
                     return false;
@@ -89,6 +94,7 @@ namespace Examen
 
                 else return true;
 
+                
             }
         }
     }
