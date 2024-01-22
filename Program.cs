@@ -7,6 +7,27 @@ namespace Examen
         {
             public static void Main()
             {
+
+                //MENÚ 
+
+                const string MSGChoose = "A. Saltar\r\nB. Córrer\r\nC. Ajupir-se\r\nD. Amagar-se";
+                char option;
+                Console.WriteLine(MSGChoose);
+                option = Convert.ToChar(Console.ReadLine());
+                switch (option)
+                
+                {
+                    case 'a': Console.WriteLine ("Salto");break;
+                    case 'A': Console.WriteLine("Salto"); break;
+                    case 'b': Console.WriteLine("Córrer"); break;
+                    case 'B': Console.WriteLine("Córrer"); break;
+                    case 'c': Console.WriteLine("Ajupir-se"); break;
+                    case 'C': Console.WriteLine("Ajupir-se"); break;
+                    case 'd': Console.WriteLine("Amagar-se"); break;
+                    case 'D': Console.WriteLine("Amagar-se"); break;
+                }
+
+
                 const string MSGIntroduce = "Introdueix el dia, mes i any";
                 const string MSGOK = "El format no és correcte";
                 const string MSGKO = "La data és correcta";
